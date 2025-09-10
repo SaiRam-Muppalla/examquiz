@@ -418,4 +418,5 @@ DatabaseClass DAO = new DatabaseClass();
     </script>
     <script src="js/script.js"></script>
 </body>
+<jsp:include page="includes/footer.jspf" />
 </html>

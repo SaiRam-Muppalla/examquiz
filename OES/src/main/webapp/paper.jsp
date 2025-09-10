@@ -35,6 +35,7 @@ DatabaseClass DAO = new DatabaseClass();
 			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" class="nav-logo">SaiRam Muppalla</a>
 		</div>
 		<div class="main-nav-right flex-div" id="showprofilemenu">
+			<a href="index.jsp"><button class="user-Edit-btn">Home</button></a>
 <%
 if (session.getAttribute("studStatus") != null) {
 	if (session.getAttribute("studStatus").equals("1")) {
@@ -76,22 +77,22 @@ if (session.getAttribute("studStatus") != null) {
 				for(Question ques : Listques) { */
 				%>
 				
-				<div class="newcont">
+				<div class="newcont" data-idx="<%=k+1 %>">
 					<div class="question1">
 						<p class="ques">Q <%=k+1 %>) <%=ques.getQues() %></p>
 						<p class="desc"><%=ques.getQdesc() %></p>
 					</div>
 					
 					<div class="Answer">
-						<label class="A1"><input type="radio" name="opt<%=k %>" onclick="myFunction<%=k+1 %>(this.value)" value="<%=ques.getOptn1() %>"> <%=ques.getOptn1() %></label> 
-						<label class="A1"><input type="radio" name="opt<%=k %>" onclick="myFunction<%=k+1 %>(this.value)" value="<%=ques.getOptn2() %>"> <%=ques.getOptn2() %></label> 
-						<label class="A1"><input type="radio" name="opt<%=k %>" onclick="myFunction<%=k+1 %>(this.value)" value="<%=ques.getOptn3() %>"> <%=ques.getOptn3() %></label> 
-						<label class="A1"><input type="radio" name="opt<%=k %>" onclick="myFunction<%=k+1 %>(this.value)" value="<%=ques.getOptn4() %>"> <%=ques.getOptn4() %></label>
-						<label class="A1" id="radio1"><input  checked type="radio" name="opt<%=k %>" onclick="myFunction<%=k+1 %>(this.value)" value="NOTSELECTED"> <%=ques.getOptn4() %></label>
+						<label class="A1"><input type="radio" name="opt<%=k %>" value="<%=ques.getOptn1() %>"> <%=ques.getOptn1() %></label> 
+						<label class="A1"><input type="radio" name="opt<%=k %>" value="<%=ques.getOptn2() %>"> <%=ques.getOptn2() %></label> 
+						<label class="A1"><input type="radio" name="opt<%=k %>" value="<%=ques.getOptn3() %>"> <%=ques.getOptn3() %></label> 
+						<label class="A1"><input type="radio" name="opt<%=k %>" value="<%=ques.getOptn4() %>"> <%=ques.getOptn4() %></label>
+						<label class="A1" id="radio1"><input checked type="radio" name="opt<%=k %>" value="NOTSELECTED"> <%=ques.getOptn4() %></label>
 					</div>
 					<div class="answer1">
 						<p>
-							Selected Answer: <input type="text" name="answer" id="result<%=k+1 %>" readonly>
+							Selected Answer: <input type="text" name="answer" id="result-<%=k+1 %>" readonly>
 						</p>
 					</div>
 				</div>
@@ -186,12 +187,6 @@ if (session.getAttribute("studStatus") != null) {
 	}
 	}
 	%>
-	<%
-		int i=0;
-		String exid1 = (String) session.getAttribute("startexam");
-		List<Question> Listques=DAO.getexamquestion(exid1); 
-		for(Question ques : Listques) {
-	%>
 	<script>
 		function closeinstr() {
 		  document.getElementById("instr").style.display = "none";
@@ -199,13 +194,18 @@ if (session.getAttribute("studStatus") != null) {
 		function showinstr() {
 		  document.getElementById("instr").style.display = "block";
 		}
-		function myFunction<%=i+1%>(browser) {
-  			document.getElementById("result<%=i+1%>").value = browser;
-		}
+		document.addEventListener('DOMContentLoaded', function() {
+		  document.querySelectorAll('.newcont').forEach(function(block) {
+		    var idx = block.getAttribute('data-idx');
+		    block.querySelectorAll('input[type="radio"]').forEach(function(radio) {
+		      radio.addEventListener('change', function() {
+		        var el = document.getElementById('result-' + idx);
+		        if (el) el.value = this.value;
+		      });
+		    });
+		  });
+		});
 	</script>
-	<%
-	i++;
-	} %>
 	
 	<script>
     	history.forward();
@@ -224,7 +224,7 @@ if (session.getAttribute("studStatus") != null) {
 		} else {
 			console.log ("not supported ! " ) ;
 		}
-
+	<jsp:include page="includes/footer.jspf" />
 	</script>
 	
 </body>

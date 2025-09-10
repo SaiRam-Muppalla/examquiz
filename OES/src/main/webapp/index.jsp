@@ -52,12 +52,7 @@ response.setHeader("Expires", "0"); //prevents caching at the proxy server
  -->
 		</div>
 	</div>
-	<div class="footer">
-		<div style="color:#fff;text-align:center;line-height:50px;">
-			© 2025 SaiRam Muppalla ·
-			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">LinkedIn</a>
-		</div>
-	</div>
+	<%@ include file="includes/footer.jspf" %>
 	<script>
 	history.forward();
 	window.onbeforeunload = function() {

@@ -211,6 +211,7 @@
          return false;
       });
    </script>
+   <jsp:include page="includes/footer.jspf" />
 </body>
 
 </html>
