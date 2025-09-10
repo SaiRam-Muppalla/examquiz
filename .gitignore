@@ -1,0 +1,14 @@
+# Build outputs
+OES/target/
+
+# IDE/editor
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+logs/
