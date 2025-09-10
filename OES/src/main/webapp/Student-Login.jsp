@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   <% String msg = request.getParameter("msg"); %>
    <nav class="main-nav flex-div">
       <div class="main-nav-left flex-div">
          <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
@@ -52,14 +53,13 @@
                       
                    	<%
                      
-                     if(request.getParameter("msg").equals("unsuccessfully1")) { 
+                     if ("unsuccessfully1".equals(msg)) { 
                    	%>
                    	<div class="signup-link-2">
                         Something went wrong Retry
                      </div>
                    	<%
-                     }
-                     if(request.getParameter("msg").equals("no")) { 
+                     } else if ("no".equals(msg)) { 
                    	%>
                    	<div>
                         

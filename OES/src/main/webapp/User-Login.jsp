@@ -14,6 +14,7 @@
 </head>
 
 <body>
+   <% String msg = request.getParameter("msg"); %>
    <nav class="main-nav flex-div">
       <div class="main-nav-left flex-div">
          <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
@@ -66,35 +67,35 @@
                      <div class="signup-link">
                         Not a member? <a>Signup now</a>
                      </div>
-                     <%
-                     if(request.getParameter("msg").equals("successfully")) { 
-                   	%>
+                               <%
+                               if ("successfully".equals(msg)) { 
+                            	%>
                    	<div class="signup-link-1">
                         successfully register
                      </div>
                    	<%
                      }
-                    if(request.getParameter("msg").equals("unsuccessfully")) { 
+                    else if ("unsuccessfully".equals(msg)) { 
                   	%>
                    	<div class="signup-link-1">
                         Something went wrong Retry
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("unsuccessfully1")) { 
+                     else if ("unsuccessfully1".equals(msg)) { 
                    	%>
                    	<div class="signup-link-2">
                         Email or Password wrong
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("no")) { 
+                     else if ("no".equals(msg)) { 
                    	%>
                    	<div>
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("OTPisincorrect")) { 
+                     else if ("OTPisincorrect".equals(msg)) { 
                      %>
                      
                       <div class="signup-link-2">
@@ -103,7 +104,7 @@
                     
                    	<%
                      }
-                     if(request.getParameter("msg").equals("Already")) { 
+                     else if ("Already".equals(msg)) { 
                      %>
                      
                         <div class="signup-link-1">
@@ -135,36 +136,36 @@
                         <div class="btn-layer"></div>
                         <input type="submit" value="Sign up">
                      </div>
-                     <%
-                     if(request.getParameter("msg").equals("successfully")) { 
-                   	%>
+                               <%
+                               if ("successfully".equals(msg)) { 
+                            	%>
                    	<div class="signup-link-1">
                         successfully register
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("unsuccessfully")) { 
+                     else if ("unsuccessfully".equals(msg)) { 
                    	%>
                    	<div class="signup-link-2">
                         Something went wrong Retry
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("no")) { 
+                     else if ("no".equals(msg)) { 
                    	%>
                    	<div>
                         
                      </div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("OTPisincorrect")) { 
+                     else if ("OTPisincorrect".equals(msg)) { 
                      %>
                      <div class="signup-link-2">
                    	 	OTP is incorrect
                    	</div>
                    	<%
                      }
-                     if(request.getParameter("msg").equals("Already")) { 
+                     else if ("Already".equals(msg)) { 
                      %>
                      <div class="signup-link-1">
                        	Already Registered
