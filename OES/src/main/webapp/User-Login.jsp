@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+<!-- Maintained by SaiRam Muppalla — https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/ -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -17,7 +17,7 @@
    <nav class="main-nav flex-div">
       <div class="main-nav-left flex-div">
          <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
-         <a href="index.jsp" class="nav-logo">Online Examination System</a>
+         <a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" class="nav-logo">SaiRam Muppalla</a>
       </div>
       <div class="main-nav-right flex-div" id="showprofilemenu">
          <a href="Student-Login.jsp?msg=1"><button class="stud-login-btn">Student Login</button></a>

@@ -29,4 +29,4 @@ Default credentials: see `CREDENTIALS.md`.
 
 ## Notes
 
-This repo is derived from the Online-Exam-System-Java project with containerization, environment-based DB config, startup seeding, and CI/CD additions.
+Containerized, environment-driven configuration, seeded defaults, and CI/CD are included for convenience.

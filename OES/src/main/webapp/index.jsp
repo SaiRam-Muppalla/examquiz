@@ -5,7 +5,7 @@ response.setHeader("Pragma", "no-cache");
 response.setHeader("Expires", "0"); //prevents caching at the proxy server
 %>
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+<!-- Maintained by SaiRam Muppalla — https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/ -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -20,8 +20,8 @@ response.setHeader("Expires", "0"); //prevents caching at the proxy server
 <body>
 	<nav class="main-nav flex-div">
 		<div class="main-nav-left flex-div">
-			<i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i> <a
-				href="" class="nav-logo">Welcome To Edulytics</a>
+			<i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
+			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" class="nav-logo">SaiRam Muppalla</a>
 		</div>
 		<div class="main-nav-right flex-div" id="showprofilemenu">
 			<a href="Student-Login.jsp?msg=1"><button class="stud-login-btn">Student Login</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -53,8 +53,10 @@ response.setHeader("Expires", "0"); //prevents caching at the proxy server
 		</div>
 	</div>
 	<div class="footer">
-	
-	
+		<div style="color:#fff;text-align:center;line-height:50px;">
+			© 2025 SaiRam Muppalla ·
+			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">LinkedIn</a>
+		</div>
 	</div>
 	<script>
 	history.forward();

@@ -45,7 +45,7 @@ String id = (String) session.getAttribute("UserId");
                                 <label for="fname">Username</label>
                             </div>
                             <div class="col-75 ">
-                                <input type="text" value="Sujit" readonly id="fname" name="firstname" placeholder="Username..">
+                                <input type="text" value="" readonly id="fname" name="firstname" placeholder="Username..">
                             </div>
                         </div>
                         <div class="row flex-div-center">
@@ -53,8 +53,7 @@ String id = (String) session.getAttribute("UserId");
                                 <label for="lname">Email-Id</label>
                             </div>
                             <div class="col-75">
-                                <input type="email" value="
-                                sujitnavadkar11@gmail.com" readonly id="lname" name="lastname" placeholder="Email-Id..">
+                                <input type="email" value="" readonly id="lname" name="lastname" placeholder="Email-Id..">
                             </div>
                         </div>
                         <div class="row flex-div-center">
@@ -62,7 +61,7 @@ String id = (String) session.getAttribute("UserId");
                                 <label for="lname">Password</label>
                             </div>
                             <div class="col-75">
-                                <input type="password" value="1122212" id="lname" name="lastname" placeholder="Password..">
+                                <input type="password" value="" id="lname" name="lastname" placeholder="Password..">
                             </div>
                         </div>
                         <div class="row flex-div-center">
@@ -70,7 +69,7 @@ String id = (String) session.getAttribute("UserId");
                                 <label for="lname">Phone Number</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" value="9958746809" id="lname" name="lastname" placeholder="Phone No..">
+                                <input type="text" value="" id="lname" name="lastname" placeholder="Phone No..">
                             </div>
                         </div>
                           <hr>        

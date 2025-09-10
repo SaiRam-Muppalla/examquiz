@@ -32,7 +32,7 @@ DatabaseClass DAO = new DatabaseClass();
 	<!-- ---------------------nav bar-------------------------- -->
 	<nav class="main-nav flex-div">
 		<div class="main-nav-left flex-div">
-			<a href="" class="nav-logo">Online Examination System</a>
+			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" class="nav-logo">SaiRam Muppalla</a>
 		</div>
 		<div class="main-nav-right flex-div" id="showprofilemenu">
 <%
