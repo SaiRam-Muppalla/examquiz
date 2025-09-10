@@ -10,7 +10,7 @@ response.setHeader("Expires", "0"); //prevents caching at the proxy server
 
 <head>
 <meta charset="utf-8">
-<title>OES</title>
+<title>ExamQuiz · SaiRam Muppalla</title>
 <link rel="stylesheet" href="css/User-Login-Register.css">
 <link rel="stylesheet" href="css/nav.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,7 @@ response.setHeader("Expires", "0"); //prevents caching at the proxy server
 </head>
 
 <body>
-	<nav class="main-nav flex-div">
-		<div class="main-nav-left flex-div">
-			<i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
-			<a href="https://www.linkedin.com/in/sai-ram-muppalla-188a312b9/" target="_blank" rel="noopener" class="nav-logo">SaiRam Muppalla</a>
-		</div>
-		<div class="main-nav-right flex-div" id="showprofilemenu">
-			<a href="Student-Login.jsp?msg=1"><button class="stud-login-btn">Student Login</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="User-Login.jsp?msg=1"><button class="stud-login-btn">User Login</button></a>
-		</div>
-	</nav>
+	<jsp:include page="includes/header.jspf" />
 	<div class="new">
 		<div class="wrapper1">
 		<br>

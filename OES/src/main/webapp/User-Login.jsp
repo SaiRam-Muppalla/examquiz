@@ -4,7 +4,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>User Login</title>
+   <title>ExamQuiz · User Login</title>
    <link rel="stylesheet" href="css/User-Login-Register.css">
    <link rel="stylesheet" href="css/nav.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
